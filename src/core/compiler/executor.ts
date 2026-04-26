@@ -5,7 +5,7 @@
  * Routes AST nodes to appropriate handlers.
  */
 
-import { ASTNode } from './parser';
+import { ParsedCommand } from './parser';
 
 export interface ExecutionResult {
   success: boolean;
@@ -13,7 +13,7 @@ export interface ExecutionResult {
   error?: string;
 }
 
-export async function executor(ast: ASTNode): Promise<ExecutionResult> {
+export async function executor(parsedCommand: ParsedCommand): Promise<ExecutionResult> {
   // TODO: Implement command execution
   // - Route to command handlers
   // - Execute system calls
@@ -21,6 +21,6 @@ export async function executor(ast: ASTNode): Promise<ExecutionResult> {
   
   return {
     success: true,
-    output: 'Command executed',
+    output: `Command executed: ${parsedCommand.command}`,
   };
 }

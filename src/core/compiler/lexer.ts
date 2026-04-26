@@ -12,10 +12,11 @@ export interface Token {
 }
 
 export function lexer(input: string): Token[] {
-  // TODO: Implement tokenization logic
-  const tokens: Token[] = [];
-  
-  // Parse input string into tokens
-  
-  return tokens;
+  const segments = input.trim().split(/\s+/).filter(Boolean);
+
+  return segments.map((segment, index) => ({
+    type: index === 0 ? 'COMMAND' : segment.startsWith('--') ? 'FLAG' : 'ARGUMENT',
+    value: segment,
+    position: index,
+  }));
 }

@@ -21,6 +21,8 @@ export async function searchVectorStore(
   // - Perform similarity search
   // - Return top-K results
   
+  void query;
+  void topK;
   return [];
 }
 
@@ -31,4 +33,5 @@ export async function upsertToVectorStore(
   // - Connect to vector DB
   // - Generate embeddings
   // - Store in vector database
+  void documents;
 }
