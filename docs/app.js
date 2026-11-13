@@ -94,7 +94,7 @@ function render(page){
   paragraph('A Hunter License for a bookmark. A One Piece straw hat, a Haikyuu!! volleyball, and a Minecraft grass block in the margins.');
   paragraph(info.interests);break;
  }
- case 'about':paragraph(info.about);paragraph(info.training);addLink('Download editable source ↓','console-source.zip',true);break;
+ case 'about':paragraph(info.about);paragraph(info.training);break;
  case 'projects':choices=info.projects.map((p,i)=>[String(i+1),p.name,'project-'+(i+1)]);break;
  case 'skills':paragraph(info.skills);break;
  

@@ -199,7 +199,8 @@
  .desktop .lamp-scene #lamp{right:0;width:37%;clip-path:polygon(3% 11%,70% 4%,87% 36%,79% 91%,98% 92%,98% 100%,52% 100%,52% 93%,68% 90%,77% 37%,64% 13%,3% 22%)}
  .desktop #lamp-art{object-fit:fill}
  .gallery{max-height:23vh}.gallery canvas[data-print=crown]{object-fit:contain;max-height:23vh}
- .desktop #journal{left:2%;bottom:0}
+ .desktop #thinkpad{bottom:32%}
+ .desktop #journal{left:3%;bottom:0;width:min(9vw,10vh)}
  .desktop .lamp-note{left:25%;bottom:-1%;width:52%}
  .desktop .lamp-scene.lit:before{inset:12% 7% 0 18%}
  .desktop .lamp-scene .pool{inset:91% -4% -4% 16%}
