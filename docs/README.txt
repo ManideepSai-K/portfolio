@@ -1,0 +1,2 @@
+Open index.html in a browser. Edit portfolio.js for profile details, projects, links, accent and cat name. The command menus are in app.js. Edit art.js for the pixel studio and style.css for layout. To publish, host the files together and refresh console-source.zip with your edits. Edit the thoughts list in portfolio.js to change the windowsill dialogue. To update the resume, replace Manideep-Sai-Resume.pdf or edit the resume path in portfolio.js.
+Edit deskTrack in portfolio.js to replace the music title and audio file.
