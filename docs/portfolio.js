@@ -48,7 +48,7 @@ window.portfolio = {
       "type": "Language tools",
       "summary": "Archived, incomplete Chromium prototype for translating research papers.",
       "stack": "JavaScript · Express · Bhashini · Gemini",
-      "detail": "I presented the SaralQ prototype at Megathon in 2025. Development stopped before completion. MITRA is my separate voice-and-text iteration.",
+      "detail": "I presented the SaralQ prototype at Megathon in 2025. Development stopped before completion. That idea later informed the proposal for MITRA, our final-year team project.",
       "notes": [
         "I wanted readers to explore a research paper in their own language.",
         "I explored connecting a Chromium extension to translation and summarization services.",
@@ -73,14 +73,14 @@ window.portfolio = {
     },
     {
       "name": "MITRA",
-      "summary": "My standalone voice-and-text assistant project for Indian languages.",
-      "detail": "MITRA grew out of SaralQ. I took the idea in a conversational direction with a standalone web app for voice and text.",
+      "summary": "Final-year team project · documentation complete.",
+      "detail": "MITRA is our final-year team project. We have completed the documentation for a multilingual voice-and-text assistant for Indian languages. Implementation is the next phase.",
       "notes": [
-        "Working on SaralQ got me thinking about how someone could ask a follow-up question in their own language.",
-        "The design pairs a React interface and browser speech recognition with a FastAPI backend and a multilingual language model.",
-        "I’m documenting the supported languages and the parts that work end to end."
+        "The idea grew out of my earlier SaralQ prototype. Our team is exploring how people could ask follow-up questions in their own language.",
+        "Our project documentation describes a standalone app with voice and text input.",
+        "Documentation is complete. Implementation and testing are ahead of us."
       ],
-      "stack": "React · Web Speech API · FastAPI",
+      "stack": "Planned stack · React · Web Speech API · FastAPI",
       "url": ""
     },
     {
