@@ -106,7 +106,7 @@ function render(page){
    const row=element('p',''),heading=element('strong',label+' · ');
    heading.className='case-label';row.append(heading,document.createTextNode(project.notes[i]));output.append(row);
   });
-  paragraph(project.stack);if(project.url)addLink('Open project ↗',project.url)
+  paragraph(project.stack);if(project.url)addLink(project.linkLabel||'Open project ↗',project.url)
  }
  if(page!=='home')choices.push(['X','Back',backPage()]);
  choices.forEach(([key,label,target])=>{const b=element('button','');b.append(element('kbd','['+key+'] '),document.createTextNode(label));if(page==='projects'&&target.startsWith('project-')){

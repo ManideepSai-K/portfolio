@@ -22,7 +22,7 @@ window.portfolio = {
     "Exam day. He says he didn’t study. His friends would like a second opinion.",
     "The little forest in HealBuddy? A Random Forest. Sadly, no climbable trees.",
     "Manideep once wanted to be an astronaut. I’d settle for a window seat.",
-    "Ingreedy ranks recipes by ingredient similarity. My query is always “fish”.",
+    "Ingreedy starts with the main ingredients. Mine would be fish. Just fish.",
     "I’m running a local nap. Zero API calls.",
     "Psst. Type P, then Enter, to peek at the Projects book.",
     "Ollama runs HealBuddy’s chat model locally. The desk makes a fine sleeping spot.",
@@ -60,16 +60,17 @@ window.portfolio = {
     {
       "name": "Ingreedy",
       "type": "Recommendation",
-      "summary": "A recipe finder that starts with the ingredients already in your kitchen.",
-      "stack": "Python · TF-IDF · React · MongoDB",
-      "detail": "I built Ingreedy for those evenings when I had ingredients but no idea what to cook. It represents ingredients with TF-IDF and ranks recipes by cosine similarity. A Gemini integration offers explanations and ingredient substitutions.",
+      "summary": "A live pantry recipe finder that puts your main ingredients first.",
+      "stack": "Python · FastAPI · scikit-learn · React · Docker",
+      "detail": "I built Ingreedy to find meals from the ingredients already in my kitchen. The React app sends a pantry list to FastAPI, which ranks recipes by main-ingredient coverage, missing ingredients, and TF-IDF similarity. The public demo runs on Render.",
       "notes": [
-        "I built this for my struggle meals. I wanted to start with what was already in my kitchen.",
-        "I used TF-IDF to represent ingredient lists and cosine similarity to rank recipes. Gemini explains a suggestion or offers substitutions.",
-        "A high similarity score can still mean a missing ingredient. That distinction matters when deciding what I can actually cook."
+        "I built Ingreedy for my struggle meals, starting with the food already in my kitchen. I connected the React interface to a FastAPI backend and worked on how pantry items become recipe recommendations.",
+        "Recipes using more of the main ingredients rank first. Missing ingredients come next, with TF-IDF similarity breaking ties. This prevents butter alone from pushing unrelated dishes ahead.",
+        "Try the live demo with rice and eggs. The app shows missing ingredients, includes saved guides for simple meals, and links catalog recipes to their original instructions."
       ],
       "art": "food",
-      "url": ""
+      "url": "https://ingreedy-27eo.onrender.com/",
+      "linkLabel": "Try Ingreedy ↗"
     },
     {
       "name": "MITRA",
